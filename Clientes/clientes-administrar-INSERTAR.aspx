@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <link rel="icon" href="img/leaf.png" type="image/x-icon"/>
+    <link rel="icon" href="../img/leaf.png" type="image/x-icon"/>
         <title>Leaf :: Insertar Cliente</title>
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet"/>
@@ -39,7 +39,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="clientes-administrar.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp Clientes <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="clientes-administrar.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Clientes</a></li>
@@ -201,8 +201,20 @@
 
 
 
-                            <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1">
+                            <asp:GridView ID="GridView1" runat="server" DataSourceID="Prueba">
                             </asp:GridView>
+                            <asp:SqlDataSource ID="Prueba" runat="server" ConnectionString="<%$ ConnectionStrings:FacturacionConnectionString %>" SelectCommand="INSERTAR_CLIENTE" SelectCommandType="StoredProcedure">
+                                <SelectParameters>
+                                    <asp:ControlParameter ControlID="id" Name="ClaveCliente" PropertyName="Text" Type="Int32" />
+                                    <asp:ControlParameter ControlID="name" Name="Nombre" PropertyName="Text" Type="String" />
+                                    <asp:ControlParameter ControlID="ap" Name="ApellidoPaterno" PropertyName="Text" Type="String" />
+                                    <asp:ControlParameter ControlID="am" Name="ApellidoMaterno" PropertyName="Text" Type="String" />
+                                    <asp:ControlParameter ControlID="tel" Name="Tel" PropertyName="Text" Type="String" />
+                                    <asp:ControlParameter ControlID="email" Name="CorreoE" PropertyName="Text" Type="String" />
+                                    <asp:ControlParameter ControlID="fechanac" DbType="Date" Name="FechaNacimiento" PropertyName="Text" />
+                                    <asp:ControlParameter ControlID="ocupa" Name="Profesion" PropertyName="Text" Type="String" />
+                                </SelectParameters>
+                            </asp:SqlDataSource>
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:FacturacionConnectionString %>" SelectCommand="INSERTAR_CLIENTE" SelectCommandType="StoredProcedure">
                                 <SelectParameters>
                                     <asp:ControlParameter ControlID="id" Name="ClaveCliente" PropertyName="Text" Type="Int32" />
@@ -238,23 +250,23 @@
 
         <hr>
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p><strong>LEAF</strong>: Sistema Facturacion <span class="glyphicon glyphicon-leaf"></span> 2016</p>
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p><strong>LEAF</strong>: Sistema de Inventario <span class="glyphicon glyphicon-leaf"></span> 2016</p>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
 
-    </div>
-    <!-- /.container -->
+        </div>
+        <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
+        <!-- jQuery -->
+        <script src="../js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../js/bootstrap.min.js"></script>
 
 </body>
 </html>
