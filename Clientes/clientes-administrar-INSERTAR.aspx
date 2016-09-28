@@ -179,12 +179,7 @@
                                     <asp:TextBox ID="email" runat="server" CssClass="form-control" placeholder="Email"></asp:TextBox>
                             </div>
 
-                            <br />
-                            <div>
-                                    <label >Fecha Nacimiento:</label>
-                                    <asp:TextBox ID="fechanac" runat="server" CssClass="form-control" placeholder="Año - Mes - Dia"></asp:TextBox>
-                            </div>
-
+                           
                             <br />
                             <div>
                                     <label >Ocupacion:</label>
@@ -201,32 +196,7 @@
 
 
 
-                            <asp:GridView ID="GridView1" runat="server" DataSourceID="Prueba">
-                            </asp:GridView>
-                            <asp:SqlDataSource ID="Prueba" runat="server" ConnectionString="<%$ ConnectionStrings:FacturacionConnectionString %>" SelectCommand="INSERTAR_CLIENTE" SelectCommandType="StoredProcedure">
-                                <SelectParameters>
-                                    <asp:ControlParameter ControlID="id" Name="ClaveCliente" PropertyName="Text" Type="Int32" />
-                                    <asp:ControlParameter ControlID="name" Name="Nombre" PropertyName="Text" Type="String" />
-                                    <asp:ControlParameter ControlID="ap" Name="ApellidoPaterno" PropertyName="Text" Type="String" />
-                                    <asp:ControlParameter ControlID="am" Name="ApellidoMaterno" PropertyName="Text" Type="String" />
-                                    <asp:ControlParameter ControlID="tel" Name="Tel" PropertyName="Text" Type="String" />
-                                    <asp:ControlParameter ControlID="email" Name="CorreoE" PropertyName="Text" Type="String" />
-                                    <asp:ControlParameter ControlID="fechanac" DbType="Date" Name="FechaNacimiento" PropertyName="Text" />
-                                    <asp:ControlParameter ControlID="ocupa" Name="Profesion" PropertyName="Text" Type="String" />
-                                </SelectParameters>
-                            </asp:SqlDataSource>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:FacturacionConnectionString %>" SelectCommand="INSERTAR_CLIENTE" SelectCommandType="StoredProcedure">
-                                <SelectParameters>
-                                    <asp:ControlParameter ControlID="id" Name="ClaveCliente" PropertyName="Text" Type="Int32" />
-                                    <asp:ControlParameter ControlID="name" Name="Nombre" PropertyName="Text" Type="String" />
-                                    <asp:ControlParameter ControlID="ap" Name="ApellidoPaterno" PropertyName="Text" Type="String" />
-                                    <asp:ControlParameter ControlID="am" Name="ApellidoMaterno" PropertyName="Text" Type="String" />
-                                    <asp:ControlParameter ControlID="tel" Name="Tel" PropertyName="Text" Type="String" />
-                                    <asp:ControlParameter ControlID="email" Name="CorreoE" PropertyName="Text" Type="String" />
-                                    <asp:ControlParameter ControlID="fechanac" DbType="Date" Name="FechaNacimiento" PropertyName="Text" />
-                                    <asp:ControlParameter ControlID="ocupa" Name="Profesion" PropertyName="Text" Type="String" />
-                                </SelectParameters>
-                            </asp:SqlDataSource>
+                            
                         
                         </div>
                         </form>

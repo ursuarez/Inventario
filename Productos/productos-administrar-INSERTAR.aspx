@@ -173,8 +173,26 @@
 
                                 <br />
                                 <div>
-                                        <label >Precio Unitario:</label>
-                                        <asp:TextBox ID="price" runat="server" CssClass="form-control" placeholder="Precio $ 00.00"></asp:TextBox>
+                                        <label >Stock máximo en almacen:</label>
+                                        <asp:TextBox ID="stockmax" runat="server" CssClass="form-control" placeholder="Stock Max almacen"></asp:TextBox>
+                                </div>
+
+                                <br />
+                                <div>
+                                        <label >Stock minimo en almacen:</label>
+                                        <asp:TextBox ID="stockmin" runat="server" CssClass="form-control" placeholder="Stock Min almacen"></asp:TextBox>
+                                </div>
+
+                                <br />
+                                <div>
+                                        <label >Precio Compra:</label>
+                                        <asp:TextBox ID="compra" runat="server" CssClass="form-control" placeholder="Precio Compra $ 00.00"></asp:TextBox>
+                                </div>
+
+                                <br />
+                                <div>
+                                        <label >Precio Venta:</label>
+                                        <asp:TextBox ID="Venta" runat="server" CssClass="form-control" placeholder="Precio Venta $ 00.00"></asp:TextBox>
                                 </div>
 
                                 <br />
@@ -186,20 +204,6 @@
                                 <br />
 
 
-                                <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
-                            
-                        
-                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:FacturacionConnectionString %>" SelectCommand="INSERTAR_PRODUCTO" SelectCommandType="StoredProcedure">
-                                    <SelectParameters>
-                                        <asp:ControlParameter ControlID="idprod" Name="ClaveProducto" PropertyName="Text" Type="Int32" />
-                                        <asp:ControlParameter ControlID="idcat" Name="ClaveCategoria" PropertyName="Text" Type="Int32" />
-                                        <asp:ControlParameter ControlID="nom" Name="NombreProducto" PropertyName="Text" Type="String" />
-                                        <asp:ControlParameter ControlID="des" Name="Descripcion" PropertyName="Text" Type="String" />
-                                        <asp:ControlParameter ControlID="stock" Name="Existencia" PropertyName="Text" Type="Int32" />
-                                        <asp:ControlParameter ControlID="price" Name="PrecioUnitaro" PropertyName="Text" Type="Decimal" />
-                                    </SelectParameters>
-                                </asp:SqlDataSource>
-                            
                         
                             </div>
                             </form>
