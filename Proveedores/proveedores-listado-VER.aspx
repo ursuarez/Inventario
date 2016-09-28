@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="proveedores-administrar-INSERTAR.aspx.vb" Inherits="proveedores_administrar_INSERTAR" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="proveedores-listado-VER.aspx.vb" Inherits="Proveedores_proveedores_listado_VER" %>
 
 <!DOCTYPE html>
 <html lang="en"/>
@@ -12,7 +12,7 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     <link rel="icon" href="../img/leaf.png" type="image/x-icon"/>
-        <title>Leaf :: Insertar Proveedor</title>
+        <title>Leaf :: Clientes</title>
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet"/>
 
@@ -93,90 +93,54 @@
                     <p class="lead">Proveedores</p>
                     <div class="list-group">
 
-                        <a href="proveedores-administrar.html" class="list-group-item active"><span class="glyphicon glyphicon-folder-open"></span>&nbsp &nbsp Administrar Proveedores</a>
+                        <a href="proveedores-administrar.html" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>&nbsp &nbsp Administrar Proveedores</a>
                         
-                        <a href="proveedores-listado.html" class="list-group-item"><span class="glyphicon glyphicon-search"></span>&nbsp &nbsp Listado de Proveedores</a>
+                        <a href="proveedores-listado.html" class="list-group-item active"><span class="glyphicon glyphicon-search"></span>&nbsp &nbsp Listado de Proveedores</a>
 
                     </div>
                 </div>
 
+            <!-- VER TODOS -->
             <div class="col-md-9">
-
-                <div class="thumbnail">
-                    <div class="caption-full">
-                        
-                        <h4><a href="#">Administrador de Proveedores</a>
-                        </h4>
-                        
-                        <p><i><strong>Inserte, Modifique y Elimine </strong></i>registros de la base de datos <strong>Proveedores</strong></p>
-
-                        </br>
-                        
-                        <div  align="right">
-                        <a href = "proveedores-administrar-INSERTAR.aspx" class = "btn btn-primary" role = "button"><span class="glyphicon glyphicon-plus"></span>&nbsp Insertar</a>    
-                        <a href = "proveedores-administrar-MODIFICAR.aspx" class = "btn btn-info" role = "button"><span class="glyphicon glyphicon-wrench"></span>&nbsp Modificar</a>
-                        <a href = "proveedores-administrar-BORRAR.aspx" class = "btn btn-danger" role = "button"><span class="glyphicon glyphicon-trash"></span>&nbsp Borrar</a>  
-                        </div>
-
-                    </div>
-                </div>
-            
-
-
-            <!-- INSERTAR -->
             <div>
                 <div class="thumbnail">
                     <div class="caption-full">
                         
                         <form id="form1" runat="server" class="form-horizontal">
+                            <h3 style="text-align: right" class="gray">Proveedores</h3>
+                            <a href="proveedores-listado.html" class="btn btn-primary btn-sm" role="button"><span class="glyphicon glyphicon-triangle-left"></span>&nbsp &nbsp Regresar</a>
 
-                            <h3 style="text-align: right" class="gray">Insertar Proveedor</h3>
+                            <!-- Formulario -->
                         
-
-                        <!-- Formulario -->
+                            <br />
+                            <br />
+                            <asp:GridView ID="GV1" runat="server" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ID" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
+                                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                                <Columns>
+                                    <asp:BoundField DataField="ID" HeaderText="Clave Cliente" ReadOnly="True" SortExpression="ID" />
+                                    <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
+                                    <asp:BoundField DataField="Apellido_Paterno" HeaderText="Apellido Paterno" SortExpression="Apellido_Paterno" />
+                                    <asp:BoundField DataField="Telefono" HeaderText="Telefono" SortExpression="Telefono" />
+                                    <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                                    <asp:BoundField DataField="Ocupacion" HeaderText="Ocupacion" SortExpression="Ocupacion" />
+                                </Columns>
+                                <EditRowStyle BackColor="#999999" />
+                                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                                <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                                <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                                <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                                <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+                            </asp:GridView>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:FacturacionConnectionString %>" SelectCommand="MOSTRAR_CLIENTE" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                         
-                            <div>
-                                    <label >Clave Proveedor:</label>
-                                    <asp:TextBox ID="id" runat="server" CssClass="form-control" placeholder="Clave Proveedor"></asp:TextBox>
-                            </div>
-
-                            <br />
-                            <div>
-                                    <label >Nombre:</label>
-                                    <asp:TextBox ID="name" runat="server" CssClass="form-control" placeholder="Nombre Proveedor"></asp:TextBox>
-                            </div>
-
-                            <br />
-                            <div>
-                                    <label >Direccion:</label>
-                                    <asp:TextBox ID="ocupa" runat="server" CssClass="form-control" placeholder="Direccion Proveedor"></asp:TextBox>
-                            </div>
-                            
-                            <br />
-                            <div>
-                                    <label >Telefono:</label>
-                                    <asp:TextBox ID="tel" runat="server" CssClass="form-control" placeholder="Telefono 00-00-00-00"></asp:TextBox>
-                            </div>
-
-                            <br />
-                            <div>
-                                    <label >Email:</label>
-                                    <asp:TextBox ID="email" runat="server" CssClass="form-control" placeholder="Email"></asp:TextBox>
-                            </div>
-
-                            <br />
-                            <a href = "proveedores-administrar-INSERTAR.aspx" class = "btn" role = "button"><span class="glyphicon glyphicon-erase"></span>&nbsp Limpiar</a>
-                            
-                            
-                            <br />
-                                <asp:Button ID="Button1" runat="server" Text="INSERTAR"></asp:Button>
-                            <br />
-
-
+                        
                         </div>
                         </form>
                       
-                          
                     </div>
                 </div>
             </div>
