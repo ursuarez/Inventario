@@ -23,7 +23,6 @@
 
 <body>
     <!-- Navigation -->
-    <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -71,11 +70,11 @@
                     </li>
 
                     <li>
-                        <a href="../factura.html"><span class="glyphicon glyphicon-import"></span>&nbsp&nbsp Compras</a>
+                        <a href="../compras.html"><span class="glyphicon glyphicon-import"></span>&nbsp&nbsp Compras</a>
                     </li>
 
                     <li>
-                        <a href="../factura.html"><span class="glyphicon glyphicon-export"></span>&nbsp&nbsp Ventas</a>
+                        <a href="../ventas.html"><span class="glyphicon glyphicon-export"></span>&nbsp&nbsp Ventas</a>
                     </li>
                 </ul>
             </div>

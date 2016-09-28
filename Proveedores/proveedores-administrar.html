@@ -27,7 +27,6 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -46,21 +45,21 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <li class="dropdown active">
-                        <a href="clientes-administrar.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp Clientes <span class="caret"></span></a>
+                        <a href="../Clientes/clientes-administrar.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp Clientes <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="clientes-administrar.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Clientes</a></li>
-                            <li><a href="clientes-listado.html"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Clientes</a></li>
+                            <li><a href="../Clientes/clientes-administrar.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Clientes</a></li>
+                            <li><a href="../Clientes/clientes-listado.html"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Clientes</a></li>
                             <li class="divider"></li>
-                            <li><a href="clientes-empresas-adm.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Empresas</a></li>
-                            <li><a href="clientes-empresas-lis.html"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Empresas</a></li>
+                            <li><a href="../Clientes/clientes-empresas-adm.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Empresas</a></li>
+                            <li><a href="../Clientes/clientes-empresas-lis.html"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Empresas</a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown">
                         <a href="clientes-administrar.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp Proveedores <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../Proveedores/proveedores-administrar.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Proveedores</a></li>
-                            <li><a href="../Proveedores/proveedores-listado.html"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Proveedores</a></li>
+                            <li><a href="proveedores-administrar.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Proveedores</a></li>
+                            <li><a href="proveedores-listado.html"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Proveedores</a></li>
                         </ul>
                     </li>
 
@@ -98,8 +97,8 @@
                 <p class="lead">Clientes</p>
                 <div class="list-group">
 
-                    <a href="clientes-administrar.html" class="list-group-item"><span class="glyphicon glyphicon-folder-close"></span>&nbsp &nbsp Administrar Clientes</a>
-                    
+                    <a href="clientes-administrar.html" class="list-group-item active"><span class="glyphicon glyphicon-folder-open"></span>&nbsp &nbsp Administrar Clientes</a>
+
                     <a href="clientes-listado.html" class="list-group-item"><span class="glyphicon glyphicon-search"></span>&nbsp &nbsp Listado de Clientes</a>
 
                 </div>
@@ -108,9 +107,9 @@
                 <div class="list-group">
 
                     <a href="clientes-empresas-adm.html" class="list-group-item"><span class="glyphicon glyphicon-folder-close"></span>&nbsp &nbsp Administrar Empresas</a>
-                    
-                    <a href="clientes-empresas-lis.html" class="list-group-item active"><span class="glyphicon glyphicon-search"></span>&nbsp &nbsp Listado de Empresas</a>
-                    
+
+                    <a href="clientes-empresas-lis.html" class="list-group-item"><span class="glyphicon glyphicon-search"></span>&nbsp &nbsp Listado de Empresas</a>
+
                 </div>
             </div>
 
@@ -120,21 +119,23 @@
                     <div class="caption-full">
 
                         <h4>
-                            <a href="#">Listado de Empresas</a>
+                            <a href="#">Administrador de Clientes</a>
                         </h4>
 
-                        <p><i><strong>Consulte </strong></i>un registro en especifico o todos los registros de la base de datos <strong>Empresas</strong></p>
+                        <p><i><strong>Inserte, Modifique y Elimine </strong></i>registros de la base de datos <strong>Clientes</strong></p>
 
                         </br>
 
                         <div align="right">
-                            <a href="clientes-empresas-lis-BUSCAR.aspx" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search"></span>&nbsp Buscar</a>
-                            <a href="clientes-empresas-lis-VER.aspx" class="btn btn-success" role="button"><span class="glyphicon glyphicon-globe"></span>&nbsp Ver Todos</a>
+                            <a href="clientes-administrar-INSERTAR.aspx" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-plus"></span>&nbsp Insertar</a>
+                            <a href="clientes-administrar-MODIFICAR.aspx" class="btn btn-info" role="button"><span class="glyphicon glyphicon-wrench"></span>&nbsp Modificar</a>
+                            <a href="clientes-administrar-BORRAR.aspx" class="btn btn-danger" role="button"><span class="glyphicon glyphicon-trash"></span>&nbsp Borrar</a>
                         </div>
 
                     </div>
                 </div>
             </div>
+
 
 
             <div class="col-md-9">
@@ -144,10 +145,12 @@
                         <p>
                             <h4><span class="glyphicon glyphicon-question-sign blue"></span>&nbsp; &nbsp;Ayuda</h4>
                             <i class="med-font">
-                                Utilice la opcion <strong>Buscar</strong> para buscar una Empresa en especifico utilizando su <strong>Clave.</strong>. </br>
-                                Utilice la opcion <strong>Ver Todos</strong> para visualizar todas las Empresas de la base de datos.
+                                Utilice la opcion <strong>Insertar</strong> para agregar un nuevo Cliente a la base de datos. </br>
+                                Utilice la opcion <strong>Modificar</strong> para modificar los registros de algun Cliente especificando su <strong>Clave.</strong> </br>
+                                Utilice la opcion <strong>Eliminar</strong> para eliminar un Cliente de la base de datos especificando su numero de <strong>Clave.</strong>
                             </i>
                         </p>
+
                     </div>
                 </div>
             </div>
