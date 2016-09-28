@@ -27,6 +27,7 @@
 </head>
 
 <body>
+
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -92,17 +93,15 @@
     <div class="container sect">
 
         <div class="row">
-
             <div class="col-md-3">
                 <p class="lead">Proveedores</p>
                 <div class="list-group">
 
-                    <a href="proveedoress-administrar.html" class="list-group-item active"><span class="glyphicon glyphicon-folder-open"></span>&nbsp &nbsp Administrar Clientes</a>
+                    <a href="proveedores-administrar.html" class="list-group-item"><span class="glyphicon glyphicon-folder-close"></span>&nbsp &nbsp Administrar Proveedores</a>
 
-                    <a href="proveedores-listado.html" class="list-group-item"><span class="glyphicon glyphicon-search"></span>&nbsp &nbsp Listado de Proveedores</a>
+                    <a href="proveedores-listado.html" class="list-group-item active"><span class="glyphicon glyphicon-search"></span>&nbsp &nbsp Listado de Proveedores</a>
 
                 </div>
-
             </div>
 
             <div class="col-md-9">
@@ -111,17 +110,16 @@
                     <div class="caption-full">
 
                         <h4>
-                            <a href="#">Administrador de Proveedores</a>
+                            <a href="#">Listado de Proveedores</a>
                         </h4>
 
-                        <p><i><strong>Inserte, Modifique y Elimine </strong></i>registros de la base de datos <strong>Proveedores</strong></p>
+                        <p><i><strong>Consulte </strong></i>un registro en especifico o todos los registros de la base de datos <strong>Proveedores</strong></p>
 
                         </br>
 
                         <div align="right">
-                            <a href="proveedores-administrar-INSERTAR.aspx" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-plus"></span>&nbsp Insertar</a>
-                            <a href="proveedores-administrar-MODIFICAR.aspx" class="btn btn-info" role="button"><span class="glyphicon glyphicon-wrench"></span>&nbsp Modificar</a>
-                            <a href="proveedores-administrar-BORRAR.aspx" class="btn btn-danger" role="button"><span class="glyphicon glyphicon-trash"></span>&nbsp Borrar</a>
+                            <a href="clientes-listado-BUSCAR.aspx" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search"></span>&nbsp Buscar</a>
+                            <a href="clientes-listado-VER.aspx" class="btn btn-success" role="button"><span class="glyphicon glyphicon-globe"></span>&nbsp Ver Todos</a>
                         </div>
 
                     </div>
@@ -129,20 +127,16 @@
             </div>
 
 
-
             <div class="col-md-12">
-
                 <div class="thumbnail">
                     <div class="caption-full">
                         <p>
                             <h4><span class="glyphicon glyphicon-question-sign blue"></span>&nbsp; &nbsp;Ayuda</h4>
                             <i class="med-font">
-                                Utilice la opcion <strong>Insertar</strong> para agregar un nuevo Proveedor a la base de datos. </br>
-                                Utilice la opcion <strong>Modificar</strong> para modificar los registros de algun Proveedor especificando su <strong>Clave.</strong> </br>
-                                Utilice la opcion <strong>Eliminar</strong> para eliminar un Proveedor   de la base de datos especificando su numero de <strong>Clave.</strong>
+                                Utilice la opcion <strong>Buscar</strong> para buscar un Proveedor en especifico utilizando su <strong>Clave.</strong></br>
+                                Utilice la opcion <strong>Ver Todos</strong> para visualizar todos los Proveedores de la base de datos.
                             </i>
                         </p>
-
                     </div>
                 </div>
             </div>
@@ -172,7 +166,3 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
