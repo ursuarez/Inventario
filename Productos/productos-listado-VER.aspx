@@ -134,15 +134,15 @@
                             
                             <br />
                             <br />
-                            <asp:GridView ID="GV1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Clave" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" AllowSorting="True">
+                            <asp:GridView ID="GV1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ID" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" AllowSorting="True">
                                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                 <Columns>
-                                    <asp:BoundField DataField="Clave" HeaderText="Clave Producto" ReadOnly="True" SortExpression="Clave" />
-                                    <asp:BoundField DataField="Categoria" HeaderText="Clave Categoria" SortExpression="Categoria" />
-                                    <asp:BoundField DataField="Nombre" HeaderText="Nombre Producto" SortExpression="Nombre" />
-                                    <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" SortExpression="Descripcion" />
-                                    <asp:BoundField DataField="Existencia" HeaderText="Existencia" SortExpression="Existencia" />
-                                    <asp:BoundField DataField="Precio" HeaderText="Precio" SortExpression="Precio" />
+                                    <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" SortExpression="ID" />
+                                    <asp:BoundField DataField="ID Categoria" HeaderText="ID Categoria" SortExpression="ID Categoria" />
+                                    <asp:BoundField DataField="Nombre Producto" HeaderText="Nombre Producto" SortExpression="Nombre Producto" />
+                                    <asp:BoundField DataField="Stock" HeaderText="Stock" SortExpression="Stock" />
+                                    <asp:BoundField DataField="Precio Compra" HeaderText="Precio Compra" SortExpression="Precio Compra" />
+                                    <asp:BoundField DataField="Precio Venta" HeaderText="Precio Venta" SortExpression="Precio Venta" />
                                 </Columns>
                                 <EditRowStyle BackColor="#999999" />
                                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -159,7 +159,7 @@
                             
                             
                         
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:FacturacionConnectionString %>" SelectCommand="MOSTRAR_PRODUCTO" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ServidorProyectoAdmonConnectionString %>" SelectCommand="MOSTRAR_PRODUCTO" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                         
                             
                             

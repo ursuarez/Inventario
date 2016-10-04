@@ -133,11 +133,11 @@
                             
                             <br />
                             <br />
-                            <asp:GridView ID="GV1" runat="server" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ID" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
+                            <asp:GridView ID="GV1" runat="server" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ID Categorias" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
                                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                 <Columns>
-                                    <asp:BoundField DataField="ID" HeaderText="Clave categoria" ReadOnly="True" SortExpression="ID" />
-                                    <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
+                                    <asp:BoundField DataField="ID Categorias" HeaderText="ID Categorias" ReadOnly="True" SortExpression="ID Categorias" />
+                                    <asp:BoundField DataField="Nombre Categoria" HeaderText="Nombre Categoria" SortExpression="Nombre Categoria" />
                                     <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" SortExpression="Descripcion" />
                                 </Columns>
                                 <EditRowStyle BackColor="#999999" />
@@ -155,7 +155,7 @@
                             
                             
                         
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:FacturacionConnectionString %>" SelectCommand="MOSTRAR_CATEGORIA" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ServidorProyectoAdmonConnectionString %>" SelectCommand="MOSTRAR_CATEGORIA" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                         
                             
                             
