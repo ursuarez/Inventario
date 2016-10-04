@@ -131,11 +131,11 @@
                             <asp:GridView ID="GV1" runat="server" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ID" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
                                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                 <Columns>
-                                    <asp:BoundField DataField="ID" HeaderText="Clave Empresa" ReadOnly="True" SortExpression="ID" />
-                                    <asp:BoundField DataField="Nombre" HeaderText="Nombre Empresa" SortExpression="Nombre" />
-                                    <asp:BoundField DataField="Direccion_Empresa" HeaderText="Direccion" SortExpression="Direccion_Empresa" />
-                                    <asp:BoundField DataField="Telefono_Empresa" HeaderText="Telefono" SortExpression="Telefono_Empresa" />
-                                    <asp:BoundField DataField="Email_Empresa" HeaderText="Email Empresa" SortExpression="Email_Empresa" />
+                                    <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" SortExpression="ID" />
+                                    <asp:BoundField DataField="Nombre Empresa" HeaderText="Nombre Empresa" SortExpression="Nombre Empresa" />
+                                    <asp:BoundField DataField="Direccion" HeaderText="Direccion" SortExpression="Direccion" />
+                                    <asp:BoundField DataField="Telefono" HeaderText="Telefono" SortExpression="Telefono" />
+                                    <asp:BoundField DataField="Email Empresa" HeaderText="Email Empresa" SortExpression="Email Empresa" />
                                 </Columns>
                                 <EditRowStyle BackColor="#999999" />
                                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -152,7 +152,7 @@
                             
                             
                         
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:FacturacionConnectionString %>" SelectCommand="MOSTRAR_EMPRESA" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ProyectoAdmonConnectionString %>" SelectCommand="MOSTRAR_EMPRESA" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                         
                             
                             

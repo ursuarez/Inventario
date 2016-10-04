@@ -126,9 +126,9 @@
                             <asp:GridView ID="GV1" runat="server" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ID" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
                                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                 <Columns>
-                                    <asp:BoundField DataField="ID" HeaderText="Clave Cliente" ReadOnly="True" SortExpression="ID" />
+                                    <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" SortExpression="ID" />
                                     <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
-                                    <asp:BoundField DataField="Apellido_Paterno" HeaderText="Apellido Paterno" SortExpression="Apellido_Paterno" />
+                                    <asp:BoundField DataField="Apellido Paterno" HeaderText="Apellido Paterno" SortExpression="Apellido Paterno" />
                                     <asp:BoundField DataField="Telefono" HeaderText="Telefono" SortExpression="Telefono" />
                                     <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                                     <asp:BoundField DataField="Ocupacion" HeaderText="Ocupacion" SortExpression="Ocupacion" />
@@ -144,7 +144,7 @@
                                 <SortedDescendingCellStyle BackColor="#FFFDF8" />
                                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                             </asp:GridView>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:FacturacionConnectionString %>" SelectCommand="MOSTRAR_CLIENTE" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ProyectoAdmonConnectionString %>" SelectCommand="MOSTRAR_CLIENTE" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                         
                         
                         </div>
