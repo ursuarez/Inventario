@@ -135,7 +135,8 @@
                 </div>
 
                 <div class="modal-body">
-                    <form action="" method="post">
+                    
+                    <form id="form1" runat="server">
                         <div class="form-group">
                             <label for="usuario">Usuario</label>
                             <input type="text" name="userName" placeholder="usuario" class="form-control">
@@ -154,7 +155,8 @@
 
                 <div class="modal-footer">
                     <span class="group-btn">
-                        <input type="submit" name="enviar" class="btn btn-primary btn-md" value="Ingresar" /></form>
+                        <input type="submit" name="enviar" class="btn btn-primary btn-md" value="Ingresar" />
+                    </form>
                     </span>
                     <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                 </div>
