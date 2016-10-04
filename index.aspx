@@ -42,13 +42,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-leaf green"></span>&nbsp &nbspLeaf Sistema de Inventario</a>
+                <a class="navbar-brand" href="index.aspx"><span class="glyphicon glyphicon-leaf green"></span>&nbsp &nbspLeaf Sistema de Inventario</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li class="dropdown">
+                    <li class="dropdown disabled">
                         <a href="Clientes/clientes-administrar.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp Clientes <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="Clientes/clientes-administrar.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Clientes</a></li>
@@ -59,7 +59,7 @@
                         </ul>
                     </li>
 
-                    <li class="dropdown">
+                    <li class="dropdown disabled">
                         <a href="Proveedores/proveedores-administrar.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp Proveedores <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="Proveedores/proveedores-administrar.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Proveedores</a></li>
@@ -67,7 +67,7 @@
                         </ul>
                     </li>
 
-                    <li class="dropdown">
+                    <li class="dropdown disabled">
                         <a href="Productos/productos-administrar.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-large"></span>&nbsp&nbsp Productos <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="Productos/productos-administrar.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Productos</a></li>
@@ -78,11 +78,11 @@
                         </ul>
                     </li>
 
-                    <li>
+                    <li class="disabled">
                         <a href="compras.html"><span class="glyphicon glyphicon-import"></span>&nbsp&nbsp Compras</a>
                     </li>
 
-                    <li>
+                    <li class="disabled">
                         <a href="ventas.html"><span class="glyphicon glyphicon-export"></span>&nbsp&nbsp Ventas</a>
                     </li>
                 </ul>
@@ -139,11 +139,11 @@
                     <form id="form1" runat="server">
                         <div class="form-group">
                             <label for="usuario">Usuario</label>
-                            <input type="text" name="userName" placeholder="usuario" class="form-control">
+                            <asp:TextBox ID="txtuser" runat="server" type="text" name="userName" placeholder="usuario" class="form-control"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <label for="contraseña">Contraseña</label>
-                            <input type="password" name="userPassword" placeholder="contraseña" class="form-control">
+                            <asp:TextBox ID="txtpassword" runat="server" type="password" name="password" placeholder="contraseña" class="form-control"></asp:TextBox>
                         </div>
                         <div class="checkbox">
                             <label>
@@ -155,7 +155,9 @@
 
                 <div class="modal-footer">
                     <span class="group-btn">
-                        <input type="submit" name="enviar" class="btn btn-primary btn-md" value="Ingresar" />
+
+                        <asp:Button ID="Button1" runat="server" Text="Button" class="btn btn-primary btn-md" value="Ingresar"/>
+                        
                     </form>
                     </span>
                     <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
@@ -175,6 +177,7 @@
               new WOW().init();
     </script>
 
+    
 </body>
 
 </html>
