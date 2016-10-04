@@ -152,7 +152,7 @@
                             
                             
                         
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ProyectoAdmonConnectionString %>" SelectCommand="MOSTRAR_EMPRESA" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ServidorProyectoAdmonConnectionString %>" SelectCommand="MOSTRAR_EMPRESA" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                         
                             
                             
