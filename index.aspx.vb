@@ -9,7 +9,6 @@ Partial Class _Default
     Private Dap As New SqlDataAdapter("select * from", Cnx)
     Private dst As New DataSet
 
-
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         Dap.SelectCommand.CommandText = "select * from usuarios where UserName = '" & txtuser.Text & "' and Password = '" & txtpassword.Text & "'"

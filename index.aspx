@@ -156,7 +156,7 @@
                 <div class="modal-footer">
                     <span class="group-btn">
 
-                        <asp:Button ID="Button1" runat="server" Text="Button" class="btn btn-primary btn-md" value="Ingresar"/>
+                        <asp:Button ID="Button1" runat="server" Text="Enviar" class="btn btn-primary btn-md" value="Ingresar"/>
                         
                     </form>
                     </span>
