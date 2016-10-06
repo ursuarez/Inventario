@@ -41,48 +41,48 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-leaf green"></span>&nbsp &nbspLeaf Sistema de Inventario</a>
+                <a class="navbar-brand" href="../inicio.aspx"><span class="glyphicon glyphicon-leaf green"></span>&nbsp &nbspLeaf Sistema de Inventario</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 
                     <li class="dropdown">
-                        <a href="clientes-administrar.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp Clientes <span class="caret"></span></a>
+                        <a href="clientes-administrar.aspx" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp Clientes <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../Clientes/clientes-administrar.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Clientes</a></li>
-                            <li><a href="../Clientes/clientes-listado.html"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Clientes</a></li>
+                            <li><a href="../Clientes/clientes-administrar.aspx"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Clientes</a></li>
+                            <li><a href="../Clientes/clientes-listado.aspx"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Clientes</a></li>
                             <li class="divider"></li>
-                            <li><a href="../Clientes/clientes-empresas-adm.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Empresas</a></li>
-                            <li><a href="../Clientes/clientes-empresas-lis.html"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Empresas</a></li>
+                            <li><a href="../Clientes/clientes-empresas-adm.aspx"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Empresas</a></li>
+                            <li><a href="../Clientes/clientes-empresas-lis.aspx"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Empresas</a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown">
-                        <a href="../Proveedores-administrar.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp Proveedores <span class="caret"></span></a>
+                        <a href="../Proveedores-administrar.aspx" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp Proveedores <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../Proveedores/proveedores-administrar.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Proveedores</a></li>
-                            <li><a href="../Proveedores/proveedores-listado.html"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Proveedores</a></li>
+                            <li><a href="../Proveedores/proveedores-administrar.aspx"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Proveedores</a></li>
+                            <li><a href="../Proveedores/proveedores-listado.aspx"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Proveedores</a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown active">
-                        <a href="productos-administrar.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-large"></span>&nbsp&nbsp Productos <span class="caret"></span></a>
+                        <a href="productos-administrar.aspx" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-large"></span>&nbsp&nbsp Productos <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="productos-administrar.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Productos</a></li>
-                            <li><a href="productos-listado.html"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Productos</a></li>
+                            <li><a href="productos-administrar.aspx"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Productos</a></li>
+                            <li><a href="productos-listado.aspx"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Productos</a></li>
                             <li class="divider"></li>
-                            <li><a href="productos-categorias-adm.html"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Categorias</a></li>
-                            <li><a href="productos-categorias-lis.html"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Categorias</a></li>
+                            <li><a href="productos-categorias-adm.aspx"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp Administrar Categorias</a></li>
+                            <li><a href="productos-categorias-lis.aspx"><span>&nbsp&nbsp&nbsp&nbsp</span>&nbsp Listado Categorias</a></li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="../compras.html"><span class="glyphicon glyphicon-import"></span>&nbsp&nbsp Compras</a>
+                        <a href="../compras.aspx"><span class="glyphicon glyphicon-import"></span>&nbsp&nbsp Compras</a>
                     </li>
 
                     <li>
-                        <a href="../ventas.html"><span class="glyphicon glyphicon-export"></span>&nbsp&nbsp Ventas</a>
+                        <a href="../ventas.aspx"><span class="glyphicon glyphicon-export"></span>&nbsp&nbsp Ventas</a>
                     </li>
                 </ul>
             </div>
@@ -100,17 +100,17 @@
                     <p class="lead">Productos</p>
                     <div class="list-group">
 
-                        <a href="productos-administrar.html" class="list-group-item"><span class="glyphicon glyphicon-folder-close"></span>&nbsp &nbsp Administrar Productos</a>
+                        <a href="productos-administrar.aspx" class="list-group-item"><span class="glyphicon glyphicon-folder-close"></span>&nbsp &nbsp Administrar Productos</a>
                         
-                        <a href="productos-listado.html" class="list-group-item"><span class="glyphicon glyphicon-search"></span>&nbsp &nbsp Listado de Productos</a>
+                        <a href="productos-listado.aspx" class="list-group-item"><span class="glyphicon glyphicon-search"></span>&nbsp &nbsp Listado de Productos</a>
                     </div>
 
                     <p class="lead">Categorias</p>
                     <div class="list-group">
 
-                        <a href="productos-categorias-adm.html" class="list-group-item"><span class="glyphicon glyphicon-folder-close"></span>&nbsp &nbsp Administrar Categorias</a>
+                        <a href="productos-categorias-adm.aspx" class="list-group-item"><span class="glyphicon glyphicon-folder-close"></span>&nbsp &nbsp Administrar Categorias</a>
                         
-                        <a href="productos-categorias-lis.html" class="list-group-item active"><span class="glyphicon glyphicon-search"></span>&nbsp &nbsp Listado de Categorias</a>
+                        <a href="productos-categorias-lis.aspx" class="list-group-item active"><span class="glyphicon glyphicon-search"></span>&nbsp &nbsp Listado de Categorias</a>
                     </div>
             </div>
 
@@ -125,7 +125,7 @@
 
                             <h3 style="text-align: right" class="gray">Categorias</h3>
 
-                            <a href="productos-categorias-lis.html" class="btn btn-primary btn-sm" role="button"><span class="glyphicon glyphicon-triangle-left"></span>&nbsp &nbsp Regresar</a>
+                            <a href="productos-categorias-lis.aspx" class="btn btn-primary btn-sm" role="button"><span class="glyphicon glyphicon-triangle-left"></span>&nbsp &nbsp Regresar</a>
 
                         <!-- Formulario -->
                         
