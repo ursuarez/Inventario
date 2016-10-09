@@ -32,7 +32,7 @@ public partial class _Default : System.Web.UI.Page
         }
         catch(SqlException ex)
         {
-            Label1.Text = ex.Message;
+           
         }
     }
 }

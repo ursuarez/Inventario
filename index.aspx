@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="iin.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="_Default" %>
 
 <!DOCTYPE html>
 
@@ -156,7 +156,7 @@
                 <div class="modal-footer">
                     <span class="group-btn">
 
-                        <asp:Button ID="Button1" runat="server" Text="Enviar" class="btn btn-primary btn-md" value="Ingresar"/>
+                        <asp:Button ID="Button1" runat="server" Text="Enviar" class="btn btn-primary btn-md" onClick="Button1_Click"/>
                         
                     </form>
                     </span>
@@ -176,8 +176,6 @@
     <script>
               new WOW().init();
     </script>
-
-    
+ 
 </body>
-
 </html>
